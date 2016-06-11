@@ -8,11 +8,12 @@
 
 		<!-- Styles -->
 		<link href="styles/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="styles/aos.css" />
 		<!-- End Styles -->
 	</head>
 
   	<body>
-		<nav>
+		<nav class="nav">
 			<div class="inner">
 				<div class="nav-logo">
 					<img src="assets/images/mini-logo.svg" alt="">
@@ -29,14 +30,14 @@
 		</nav>
 		<div class="wrapper">
 			<section class="header">
-				<div class="logo animate"></div>
+				<div class="logo main-logo"></div>
 			</section>
 
-			<section class="video">
+			<section class="video" aos="fade-up" aos-anchor-placement="top-center" aos-duration="800">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/Sagg08DrO5U" frameborder="0" allowfullscreen></iframe>
 			</section>
 
-			<section class="explanations">
+			<section class="explanations" aos="fade-up" aos-anchor-placement="top-center" aos-duration="800">
 				<div class="title">
 					<h2 class="fake-title">
 						<span>V</span>oyagez
@@ -53,7 +54,7 @@
 				<div class="line"></div>
 			</section>
 
-			<section class="concept">
+			<section class="concept" aos="fade-up" aos-anchor-placement="top-center" aos-duration="800">
 				<div class="title">
 					<h2 class="fake-title">
 						<span>P</span>our commencer
@@ -93,11 +94,11 @@
 				</div>
 			</section>
 
-			<section class="get-started">
+			<section class="get-started" aos="fade-up" aos-anchor-placement="top-center" aos-duration="800">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/Sagg08DrO5U" frameborder="0" allowfullscreen></iframe>
 			</section>
 
-			<section class="story">
+			<section class="story" aos="fade-up" aos-anchor-placement="top-center" aos-duration="800">
 				<div class="title">
 					<h2 class="fake-title">
 						<span>U</span>ne aventure
@@ -114,7 +115,7 @@
 				<span class="line"></span>
 			</section>
 
-			<section class="share-experience">
+			<section class="share-experience" aos="fade-up" aos-anchor-placement="top-center" aos-duration="800">
 				<div class="title">
 					<h2 class="fake-title">
 						<span>U</span>ne expérience
@@ -150,7 +151,7 @@
 				<a href="#" class="button text-light">carnet de bord</a>
 			</section>
 
-			<section class="team">
+			<section class="team" aos="fade-up" aos-anchor-placement="top-center" aos-duration="800">
 				<div class="title">
 					<h2 class="fake-title">
 						<span>L'</span> équipe
@@ -206,7 +207,7 @@
 
 			</section>
 
-			<section class="thanks">
+			<section class="thanks" aos="fade-up" aos-anchor-placement="top-center" aos-duration="800">
 				<div class="title">
 					<h2 class="fake-title">
 						<span>N</span>ous vous remercions !
@@ -241,6 +242,10 @@
 		</div>
 		<!-- Scripts -->
 		<script src="scripts/bundle.js"></script>
+		<script src="scripts/aos.js"></script>
+		<script>
+    	AOS.init();
+  	</script>
 		<!-- End Scripts -->
   	</body>
 </html>

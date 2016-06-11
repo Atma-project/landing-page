@@ -7,11 +7,16 @@
 
 export default class Main {
   constructor() {
-
+    document.addEventListener( 'DOMContentLoaded', function () {
+      this.showContent()
+    }.bind(this), false );
   }
 
-  beep() {
-      console.log('beep');
-      console.log('beepbeep');
+  showContent(){
+    document.querySelector('.nav').classList.add('showNav');
+
+    setTimeout(function () {
+      document.querySelector('.main-logo').classList.add('animate');
+    }, 2000);
   }
 }

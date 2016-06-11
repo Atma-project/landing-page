@@ -8,10 +8,15 @@ nav {
     height: 70px;
     background: $nav-blue;
 
+    transform: scaleX(0);
+    transform-origin: left;
+
     .inner {
         max-width: 988px;
         margin: 0 auto;
         height: 70px;
+
+        opacity: 0;
     }
 
     .nav-logo {
@@ -59,10 +64,22 @@ nav {
             }
         }
     }
+
+  &.showNav {
+    transition: all 0.8s ease;
+    transform: scaleX(1);
+
+    .inner {
+      transition: all 0.8s ease;
+      transition-delay: 0.8s;
+      opacity: 1;
+    }
+  }
 }
 
 .header {
     padding-top: 235px;
+    padding-bottom: 0;
 
     .logo {
         width: 300px;
@@ -75,8 +92,7 @@ nav {
         background-image: url('../assets/images/sprite-logo-new.png');
 
         &.animate {
-            animation: logo-anim 2s steps(50) infinite;
-            animation-fill-mode: forwards;
+            animation: logo-anim 2s steps(50) forwards;
         }
     }
 
