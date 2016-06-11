@@ -1,0 +1,36 @@
+.thanks {
+  .polaroids {
+    display: table;
+    margin: 55px auto;
+
+    img {
+      margin: 0 30px;
+      height: 300px;
+
+      &:nth-child(1) {
+        transform: rotate(-8deg);
+      }
+      &:nth-child(2) {
+        transform: rotate(4deg);
+      }
+      &:nth-child(3) {
+        transform: rotate(-3deg);
+      }
+      &:nth-child(4) {
+        transform: rotate(6deg);
+      }
+    }
+  }
+
+  .names {
+    ul {
+      font-size: 18px;
+      text-align: center;
+      line-height: 40px;
+      li {
+        display: inline-block;
+        margin-left: 40px;
+      }
+    }
+  }
+}
