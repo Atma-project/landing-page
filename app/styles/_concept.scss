@@ -14,7 +14,12 @@
         margin: auto;
       }
       img {
-        width: 110px;
+        height: 110px;
+
+        &.iphone {
+          margin-left: 40px;
+          margin-right: 40px;
+        }
       }
       span {
         font-family: $brandon;
@@ -33,7 +38,7 @@
         font-weight: 100;
         position: absolute;
         bottom: -5px;
-        right: 25px;
+        right: 10px;
         width: 220px;
         font-size: 11px;
         text-transform: uppercase;
