@@ -1,6 +1,7 @@
 nav {
     position: fixed;
     z-index: 10000;
+    opacity: 0;
     top: 0;
     left: 0;
 
@@ -15,8 +16,6 @@ nav {
         max-width: 988px;
         margin: 0 auto;
         height: 70px;
-
-        opacity: 0;
     }
 
     .nav-logo {
@@ -25,6 +24,7 @@ nav {
         float: left;
         margin-top: 15px;
         margin-right: 34%;
+        opacity: 0;
     }
 
     .nav-links {
@@ -36,6 +36,7 @@ nav {
             font-size: 0.8rem;
             display: inline-block;
             text-decoration: none;
+            opacity: 0;
 
             height: 70px;
             line-height: 70px;
