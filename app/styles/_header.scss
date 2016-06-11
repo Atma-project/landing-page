@@ -1,5 +1,6 @@
 nav {
     position: fixed;
+    z-index: 10000;
     top: 0;
     left: 0;
 
@@ -23,6 +24,7 @@ nav {
 
     .nav-links {
         float: left;
+
         a {
             position: relative;
             margin-right: 20px;
@@ -60,5 +62,30 @@ nav {
 }
 
 .header {
+    padding-top: 235px;
 
+    .logo {
+        width: 300px;
+        height: 169px;
+
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 165px;
+
+        background-image: url('../assets/images/sprite-logo-new.png');
+
+        &.animate {
+            animation: logo-anim 2s steps(50) infinite;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    @keyframes logo-anim {
+        0% {
+            background-position: 0px 0px
+        },
+        100% {
+            background-position: -15000px 0px
+        }
+    }
 }
