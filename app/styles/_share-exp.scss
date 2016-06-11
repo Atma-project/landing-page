@@ -1,0 +1,61 @@
+.share-experience {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: 30px;
+    height: 363px;
+    width: 283px;
+    background-image: url('../assets/images/aqua.png');
+    animation: aqua 4s ease infinite alternate;
+
+    @keyframes aqua {
+      to {
+        transform: translateY(20px) scale(1.02) rotate(1deg);
+      }
+    }
+  }
+
+  .worlds {
+    display: table;
+    margin: 60px auto;
+    .container {
+      display: inline-block;
+      text-align: center;
+      margin: 0 20px;
+
+      .top {
+        display: flex;
+        span {
+          display: inline;
+          color: $white;
+          text-transform: uppercase;
+          line-height: 28px;
+          margin-left: 10px;
+        }
+        img {
+          display: inline;
+          height: 25px;
+          margin: 0;
+        }
+      }
+      img {
+        height: 180px;
+        margin: 10px 0;
+      }
+      span {
+        display: table;
+      }
+    }
+  }
+  .button {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 25px;
+    display: table;
+    margin: 0 auto;
+  }
+}
