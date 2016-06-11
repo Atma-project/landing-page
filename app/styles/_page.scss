@@ -1,6 +1,6 @@
 body {
-  background: url('/assets/images/background.png');
-  background-size: 100%;
+  background-image: url('/assets/images/etoiles.png'), url('/assets/images/background.jpg');
+  background-size: cover;
 }
 
 section {
@@ -26,6 +26,15 @@ iframe {
   padding: 15px 25px;
   display: table;
   margin: 0 auto;
+
+  box-shadow: 0px 0px 0px rgb(33, 75, 162);
+  transition: all 0.4s ease;
+
+  &:hover {
+    transition: all 0.4s ease;
+    box-shadow: 0px 0px 20px rgb(33, 75, 162);
+    background: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .line {
@@ -34,4 +43,8 @@ iframe {
   background-color: rgba(255, 255, 255, 0.1);
   display: block;
   margin: 30px auto;
+}
+
+.video {
+  padding-bottom: 0;
 }
