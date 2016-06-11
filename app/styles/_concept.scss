@@ -1,3 +1,44 @@
 .concept {
+  padding-bottom: 0;
+  color: $white;
+  .table {
+    .block {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      position: relative;
 
+      img, span, .text, .button {
+        float: left;
+        display: block;
+        margin: auto;
+      }
+      img {
+        width: 110px;
+      }
+      span {
+        font-family: $brandon;
+        font-size: 18px;
+        font-weight: bold;
+        width: 10%;
+      }
+      .text {
+        width: 40%;
+        line-height: 20px;
+      }
+      .button {
+        width: 20%;
+      }
+      .order {
+        font-weight: 100;
+        position: absolute;
+        bottom: -5px;
+        right: 25px;
+        width: 220px;
+        font-size: 11px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
 }
