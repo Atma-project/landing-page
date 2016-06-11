@@ -5,7 +5,7 @@
     content: "";
     position: absolute;
     top: -120px;
-    right: 30px;
+    right: -60px;
     height: 363px;
     width: 283px;
     background-image: url('../assets/images/aqua.png');
@@ -25,6 +25,7 @@
       display: inline-block;
       text-align: center;
       margin: 0 20px;
+      width: 286px;
 
       .top {
         display: flex;

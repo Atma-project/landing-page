@@ -45,7 +45,8 @@
     .container {
       display: inline-block;
       text-align: center;
-      margin: 0 20px;
+      margin: 0 -2px;
+      width: 200px;
       .name {
         font-size: 20px;
         text-transform: uppercase;
