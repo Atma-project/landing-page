@@ -2,14 +2,12 @@ import 'gsap'
 
 export default class Main {
     constructor() {
-        this.showContent()
+		this.showNavBar()
+        this.animateLogo()
     }
 
-    showContent() {
-        // document.querySelector('.nav').classList.add('showNav');
-        document.querySelector('.main-logo').classList.add('animate');
-
-        //animate nav
+	showNavBar() {
+		//animate nav
         TweenMax.fromTo('nav', 0.4, {
             opacity: 0,
             y: -100
@@ -31,6 +29,10 @@ export default class Main {
                 }, 0.1)
             }
         })
+	}
+
+    animateLogo() {
+        document.querySelector('.main-logo').classList.add('animate');
     }
 
 }
