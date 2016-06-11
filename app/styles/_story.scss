@@ -20,7 +20,7 @@
       font-size: 140px;
       opacity: 0.1;
       top: 35px;
-      left: 320px;
+      left: 240px;
     }
     &:after {
       content: ' ” ';
@@ -28,16 +28,8 @@
       position: absolute;
       font-size: 140px;
       opacity: 0.1;
-      bottom: 35px;
-      right: 320px;
+      bottom: -35px;
+      right: 240px;
     }
-  }
-
-  .line {
-    height: 1px;
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.1);
-    display: block;
-    margin: 30px auto;
   }
 }
