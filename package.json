@@ -41,6 +41,8 @@
   },
   "aliasify": {
     "aliases": {}
+  },
+  "dependencies": {
+    "gsap": "^1.18.5"
   }
-
 }
