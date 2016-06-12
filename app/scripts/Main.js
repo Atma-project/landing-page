@@ -1,10 +1,21 @@
 import 'gsap'
+import './helpers/gsap-plugins/DrawSVGPlugin'
 
 export default class Main {
     constructor() {
         this.showContent()
         this.animateLogo()
+        this.animateBackgrounds()
         this.scroll()
+    }
+
+    animateBackgrounds() {
+        TweenMax.to('.backgrounds .base', 4, {
+            opacity: 0,
+            yoyo: true,
+            repeat: -1,
+            ease: Sine.noEase
+        })
     }
 
     showContent() {
@@ -39,20 +50,20 @@ export default class Main {
         document.querySelector('.main-logo').classList.add('animate');
     }
 
-    scroll(){
-      $('a[href*="#"]:not([href="#"])').click(function(e) {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    scroll() {
+        $('a[href*="#"]:not([href="#"])').click(function(e) {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     }
 
 }
