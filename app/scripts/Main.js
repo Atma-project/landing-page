@@ -5,17 +5,7 @@ export default class Main {
     constructor() {
         this.showContent()
         this.animateLogo()
-        this.animateBackgrounds()
         this.scroll()
-    }
-
-    animateBackgrounds() {
-        TweenMax.to('.backgrounds .base', 4, {
-            opacity: 0,
-            yoyo: true,
-            repeat: -1,
-            ease: Sine.noEase
-        })
     }
 
     showContent() {
