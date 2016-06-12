@@ -3,12 +3,12 @@ import 'gsap'
 export default class Main {
     constructor() {
         this.showContent()
+        this.animateLogo()
         this.scroll()
     }
 
     showContent() {
         // document.querySelector('.nav').classList.add('showNav');
-        document.querySelector('.main-logo').classList.add('animate')
         document.querySelector('.video').classList.add('show')
 
         //animate nav
@@ -33,6 +33,10 @@ export default class Main {
                 }, 0.1)
             }
         })
+    }
+
+    animateLogo() {
+        document.querySelector('.main-logo').classList.add('animate');
     }
 
     scroll(){
