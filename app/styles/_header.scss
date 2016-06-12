@@ -9,9 +9,6 @@ nav {
     height: 70px;
     background: $nav-blue;
 
-    // transform: scaleX(0);
-    // transform-origin: left;
-
     .inner {
         max-width: 988px;
         margin: 0 auto;
@@ -24,7 +21,6 @@ nav {
         float: left;
         margin-top: 15px;
         margin-right: 34%;
-        opacity: 0;
     }
 
     .nav-links {
@@ -65,17 +61,6 @@ nav {
             }
         }
     }
-
-  // &.showNav {
-  //   transition: all 0.8s ease;
-  //   transform: scaleX(1);
-  //
-  //   .inner {
-  //     transition: all 0.8s ease;
-  //     transition-delay: 0.8s;
-  //     opacity: 1;
-  //   }
-  // }
 }
 
 .header {

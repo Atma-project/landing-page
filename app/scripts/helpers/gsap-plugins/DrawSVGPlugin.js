@@ -7,7 +7,7 @@
  * DrawSVGPlugin is a Club GreenSock membership benefit; You must have a valid membership to use
  * this code without violating the terms of use. Visit http://greensock.com/club/ to sign up or get more details.
  * This work is subject to the software agreement that was issued with your membership.
- * 
+ *
  * @author: Jack Doyle, jack@greensock.com
  */
 var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(global) !== "undefined") ? global : this || window; //helps ensure compatibility with AMD/RequireJS and CommonJS/Node
@@ -175,10 +175,7 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
 	var getGlobal = function() {
 		return (_gsScope.GreenSockGlobals || _gsScope)[name];
 	};
-	if (typeof(define) === "function" && define.amd) { //AMD
-		define(["../TweenLite"], getGlobal);
-	} else if (typeof(module) !== "undefined" && module.exports) { //node
-		require("../TweenLite.js");
+	if (typeof(module) !== "undefined" && module.exports) { //node
 		module.exports = getGlobal();
 	}
 }("DrawSVGPlugin"));

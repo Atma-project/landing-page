@@ -1,9 +1,20 @@
 import 'gsap'
+import './helpers/gsap-plugins/DrawSVGPlugin'
 
 export default class Main {
     constructor() {
 		this.showNavBar()
         this.animateLogo()
+        this.animateBackgrounds()
+    }
+
+    animateBackgrounds() {
+        TweenMax.to('.backgrounds .base', 4, {
+            opacity: 0,
+            yoyo: true,
+            repeat: -1,
+            ease: Sine.noEase
+        })
     }
 
 	showNavBar() {
