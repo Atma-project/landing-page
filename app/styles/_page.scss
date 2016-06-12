@@ -1,6 +1,11 @@
 body {
-  background-image: url('/assets/images/etoiles.png'), url('/assets/images/background.jpg');
+  background-image: url('../assets/images/etoiles.png'), url('../assets/images/background.jpg');
   background-size: cover;
+}
+
+::selection {
+  color: $nav-blue;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 section {
@@ -47,4 +52,13 @@ iframe {
 
 .video {
   padding-bottom: 0;
+  transform: translateY(100px);
+  opacity: 0;
+
+  &.show {
+    transition: transform 0.8s cubic-bezier(0, 0.76, 0.48, 0.67), opacity 1.6s linear;
+    transition-delay: 1.8s;
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

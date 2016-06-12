@@ -19,12 +19,12 @@
 					<img src="assets/images/mini-logo.svg" alt="">
 				</div>
 				<div class="nav-links">
-					<a href="#">Concept</a>
-					<a href="#">Pour commencer</a>
-					<a href="#">L'Aventure</a>
-					<a href="#">Carnet de bords</a>
-					<a href="#">L'&Eacute;quipe</a>
-					<a href="#">Merci !</a>
+					<a href="#concept">Concept</a>
+					<a href="#start">Pour commencer</a>
+					<a href="#story">L'Aventure</a>
+					<a href="#share">Carnet de bords</a>
+					<a href="#team">L'&Eacute;quipe</a>
+					<a href="#thanks">Merci !</a>
 				</div>
 			</div>
 		</nav>
@@ -33,11 +33,11 @@
 				<div class="logo main-logo"></div>
 			</section>
 
-			<section class="video" aos="fade-up" aos-anchor-placement="top-center" aos-duration="600">
+			<section class="video">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/Sagg08DrO5U" frameborder="0" allowfullscreen></iframe>
 			</section>
 
-			<section class="explanations" aos="fade-up" aos-anchor-placement="top-center" aos-duration="600">
+			<section class="explanations" id="concept" aos="fade-up" aos-anchor-placement="top-center" aos-duration="600">
 				<div class="title">
 					<h2 class="fake-title">
 						<span>V</span>oyagez
@@ -54,7 +54,7 @@
 				<div class="line"></div>
 			</section>
 
-			<section class="concept" aos="fade-up" aos-anchor-placement="top-center" aos-duration="600">
+			<section class="concept" id="start" aos="fade-up" aos-anchor-placement="top-center" aos-duration="600">
 				<div class="title">
 					<h2 class="fake-title">
 						<span>P</span>our commencer
@@ -98,7 +98,7 @@
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/Sagg08DrO5U" frameborder="0" allowfullscreen></iframe>
 			</section>
 
-			<section class="story" aos="fade-up" aos-anchor-placement="top-center" aos-duration="600">
+			<section class="story" id="story" aos="fade-up" aos-anchor-placement="top-center" aos-duration="600">
 				<div class="title">
 					<h2 class="fake-title">
 						<span>U</span>ne aventure
@@ -115,7 +115,7 @@
 				<span class="line"></span>
 			</section>
 
-			<section class="share-experience" aos="fade-up" aos-anchor-placement="top-center" aos-duration="600">
+			<section class="share-experience" id="share" aos="fade-up" aos-anchor-placement="top-center" aos-duration="600">
 				<div class="world"></div>
 				<div class="title">
 					<h2 class="fake-title">
@@ -152,7 +152,7 @@
 				<a href="#" class="button text-light">carnet de bord</a>
 			</section>
 
-			<section class="team" aos="fade-up" aos-anchor-placement="top-center" aos-duration="600">
+			<section class="team" aos="fade-up" id="team" aos-anchor-placement="top-center" aos-duration="600">
 				<div class="title">
 					<h2 class="fake-title">
 						<span>L'</span> équipe
@@ -208,7 +208,7 @@
 
 			</section>
 
-			<section class="thanks" aos="fade-up" aos-anchor-placement="top-center" aos-duration="600">
+			<section class="thanks" aos="fade-up" id="thanks" aos-anchor-placement="top-center" aos-duration="600">
 				<div class="title">
 					<h2 class="fake-title">
 						<span>N</span>ous vous remercions !
@@ -242,10 +242,14 @@
 
 		</div>
 		<!-- Scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 		<script src="scripts/bundle.js"></script>
 		<script src="scripts/aos.js"></script>
 		<script>
-    	AOS.init();
+    	AOS.init({
+				offset: 10,
+				once: true
+			});
   	</script>
 		<!-- End Scripts -->
   	</body>
