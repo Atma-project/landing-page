@@ -9,7 +9,6 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
->>>>>>> 97a9f345b5b5e8512b637c7e6607c85007df6fb1
 section {
 	padding: 100px 0;
 }
@@ -103,7 +102,7 @@ iframe {
 	}
 
 	.bkg-img {
-		background-image: url('/assets/images/etoiles.png'), url('/assets/images/halos.png');
+		background-image: url('../assets/images/etoiles.png'), url('../assets/images/halos.png');
 		background-size: cover;
 	}
 }
